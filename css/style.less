@@ -1,0 +1,212 @@
+/******************************************************/
+/*				GENERAL & LANDING PAGE 				  */
+/******************************************************/
+
+
+body {
+	padding:10px;
+	background-color: #213433;
+	font: 1.1em Arial,Helvetica,sans-serif; /* lighter */
+}
+
+#museum {
+	width:960px;
+	min-height: 1295px;
+	margin:0 auto;
+	background-image: url('../images/museum.png');
+	background-repeat: no-repeat;
+
+	border: 2px solid white;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+}
+
+
+#banner {
+	margin-top: 460px;
+	margin-left: 14px;
+}
+
+
+#landing_page_content {
+	width:960px;
+	min-height: 1295px;
+	margin:0 auto;
+	background-color: white;
+
+	.rounded-corners(5px);
+
+	#header {
+		width: 100%;
+		min-height: 140px;
+		background-color: rgba(0,0,0, 0.2)
+	}
+
+
+	.title {
+		width:100%;
+		text-align: center;
+		font: 1.3em;
+	}
+
+	a{
+		float:left;
+		height:170px;
+		text-align: center;
+		margin-top:1em;
+		color: #342342;
+
+		&:hover {
+			text-decoration: underline;
+			color:  #345362;
+			font-weight: bold;
+		}
+
+		img {
+			width:100px;
+			.rounded-corners(60px);
+		}
+
+		span {
+			display: inline-block;
+			width: 100%;
+		}
+	}
+
+	.row_of_three {
+		display: inline-block;
+		width: 100%;
+
+		a {
+			width: 33%;
+		}
+
+	}
+
+	.row_of_two {
+		display: inline-block;
+		width: 100%;
+
+		a {
+			width: 50%;
+		}
+	}
+
+
+	#footer {
+		width: 100%;
+		margin-top:140px;
+		min-height: 140px;
+		background-color: rgba(0,0,0, 0.2)
+	}
+
+}
+
+
+
+/******************************************************/
+/*					SEARCH BOX		 				  */
+/******************************************************/
+/* Form wrapper styling */
+.form-wrapper {
+  width: 450px;
+  padding: 10px;
+  margin: 1em auto;
+  background: #444;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4) inset, 0 1px 0 rgba(255, 255, 255, 0.2);
+  /* mobile */
+  /* Form text input */
+  /* Form submit button */
+}
+
+.form-wrapper input {
+  width: 73%;
+  height: 20px;
+  padding: 10px 5px;
+  float: left;
+  font: bold 15px 'lucida sans', 'trebuchet MS', 'Tahoma';
+  border: 0;
+  background: #eee;
+  border-radius: 3px 0 0 3px;
+}
+.form-wrapper input:focus {
+  outline: 0;
+  background: #fff;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.8) inset;
+}
+.form-wrapper input::-webkit-input-placeholder {
+  color: #999;
+  font-weight: normal;
+  font-style: italic;
+}
+.form-wrapper input:-moz-placeholder {
+  color: #999;
+  font-weight: normal;
+  font-style: italic;
+}
+.form-wrapper input::-ms-input-placeholder {
+  color: #999;
+  font-weight: normal;
+  font-style: italic;
+}
+.form-wrapper button {
+  overflow: visible;
+  position: relative;
+  float: right;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  height: 40px;
+  width: 24%;
+  font: bold 15px/40px 'lucida sans', 'trebuchet MS', 'Tahoma';
+  color: #fff;
+  text-transform: uppercase;
+  background: #065da7;
+  border-radius: 0 3px 3px 0;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+.form-wrapper button:hover {
+  background: #7c2828;
+}
+.form-wrapper button:active,
+.form-wrapper button:focus {
+  background: #7c2828;
+  outline: 0;
+}
+.form-wrapper button::-moz-focus-inner {
+  /* remove extra button spacing for Mozilla Firefox */
+  border: 0;
+  padding: 0;
+}
+/* clearfloat */
+.cf {
+  zoom: 1;
+}
+.cf:after {
+  clear: both;
+}
+.cf:before,
+.cf:after {
+  content: "";
+  display: table;
+}
+
+
+/******************************************************/
+/*					FUNCTIONS		 				  */
+/******************************************************/
+
+/*rounded corners function : 5px is default radius*/
+.rounded-corners (@radius: 5px) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  -ms-border-radius: @radius;
+  -o-border-radius: @radius;
+  border-radius: @radius;
+}
