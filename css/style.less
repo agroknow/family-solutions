@@ -1,3 +1,5 @@
+@olive_green:#213433;
+
 /******************************************************/
 /*				GENERAL & LANDING PAGE 				  */
 /******************************************************/
@@ -5,8 +7,8 @@
 
 body {
 	padding:10px;
-	background-color: #213433;
-	font: 1.1em Arial,Helvetica,sans-serif; /* lighter */
+	background-color: @olive_green;
+	font: 1.1em Open Sans,Helvetica,Arial,sans-serif; /* lighter */
 }
 
 #museum {
@@ -47,9 +49,12 @@ body {
 
 
 	.title {
-		width:100%;
+		width:500px;
+		margin:20px auto 10px;
 		text-align: center;
-		font: 1.3em;
+		font: 1.2em italic 300;
+		color: @olive_green;
+		border-bottom: 2px solid @olive_green;
 	}
 
 	a{
